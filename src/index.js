@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import ReactDOM from "react-dom"
 import { Frame, useCycle } from "framer"
-import { motion, useMotionValue } from "framer-motion"
+import { motion } from "framer-motion"
 import { useCycle as useCycleFramerMotion } from "framer-motion"
 
 import "./styles.css"
@@ -139,18 +139,22 @@ function App() {
         }}
         onClick={() => toggleFULLSCREEN()}
       >
+        Animating React Using
         <br />
-        Animating React using
-        <br />
-        Framer & Framer Motion
+        <a href="https://Framer.com" style={{ color: "darkblue" }}>
+          Framer
+        </a>{" "}
+        &{" "}
+        <a href="https://Framer.com/motion" style={{ color: "darkblue" }}>
+          Framer Motion
+        </a>
         <br />
         <br />
         by Dr. Derek Austin 🥳
         <br />
-        <a href="http://medium.com/@derek_develops" style={{ color: "blue" }}>
-          @derek_develops
+        <a href="http://medium.com/@DoctorDerek" style={{ color: "darkblue" }}>
+          @DoctorDerek
         </a>
-        <br />
         <br />
       </h2>
       <div
@@ -158,7 +162,8 @@ function App() {
         style={{
           minHeight: TOGGLE_HEIGHT * 2,
           alignItems: "center",
-          justifyContent: "center"
+          justifyContent: "center",
+          width: "100%"
         }}
       >
         <h1
@@ -167,7 +172,7 @@ function App() {
             fontSize: TOGGLE_RADIUS * 1.2
           }}
         >
-          Framer toggles
+          Framer Toggles
         </h1>
         <Frame // Example 1: Basic animated toggle switch using spring
           // Frame is basically equivalent to motion.div in Framer Motion
@@ -397,7 +402,7 @@ function App() {
         className="framerMotionExamples" // Framer Motion Examples
         style={{
           minHeight: TOGGLE_HEIGHT * 2,
-          display: "flex-shrink"
+          width: "100%"
         }}
       >
         <h1
@@ -406,7 +411,7 @@ function App() {
             fontSize: TOGGLE_RADIUS * 1.2
           }}
         >
-          Framer Motion toggles
+          Framer Motion Toggles
         </h1>
         <div
           class="break" // Flexbox line break
@@ -648,24 +653,23 @@ function App() {
             </span>
           </motion.div>
         </motion.div>
+      </div>
 
-        <div
-          className="otherExamples" // Examples from around the web
+      <div
+        className="otherExamples" // Examples from around the web
+        style={{
+          minHeight: TOGGLE_HEIGHT * 2
+        }}
+      >
+        <h1
           style={{
-            minHeight: TOGGLE_HEIGHT * 2,
-            display: "flex-shrink"
+            backgroundColor: "lightblue",
+            fontSize: TOGGLE_RADIUS * 1.2
           }}
         >
-          <h1
-            style={{
-              backgroundColor: "lightblue",
-              fontSize: TOGGLE_RADIUS * 1.2
-            }}
-          >
-            Other examples
-          </h1>
-          {webExamples.map((item, link) => ListItem(item, link))}
-        </div>
+          Framer & Framer Motion Live Demos
+        </h1>
+        {webExamples.map((item, link) => ListItem(item, link))}
       </div>
 
       <h2
@@ -673,23 +677,24 @@ function App() {
           fontSize: TOGGLE_RADIUS * 0.8
         }}
       >
+        LinkedIn.com/in/
+        <a href="LinkedIn.com/in/derek-austin" style={{ color: "darkblue" }}>
+          Derek-Austin
+        </a>
+        <br />
         Twitter.com/
-        <a href="Twitter.com/derek_develops" style={{ color: "blue" }}>
-          derek_develops
+        <a href="Twitter.com/AskDoctorDerek" style={{ color: "darkblue" }}>
+          AskDoctorDerek
         </a>
         <br />
         Medium.com/
-        <a href="https://Medium.com/@derek_develops" style={{ color: "blue" }}>
-          @derek_develops
+        <a href="https://Medium.com/@DoctorDerek" style={{ color: "darkblue" }}>
+          @DoctorDerek
         </a>
         <br />
         GitHub.com/
-        <a href="https://GitHub.com/djD-REK/" style={{ color: "blue" }}>
-          djD-REK
-        </a>
-        /
-        <a href="https://GitHub.com/djD-REK/framer" style={{ color: "blue" }}>
-          framer
+        <a href="https://GitHub.com/DoctorDerek/" style={{ color: "darkblue" }}>
+          DoctorDerek
         </a>
         <br />
       </h2>
