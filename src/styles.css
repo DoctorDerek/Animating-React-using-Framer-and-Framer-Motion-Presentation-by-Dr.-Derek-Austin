@@ -1,0 +1,65 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #005aa7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #fffde4,
+    #005aa7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #fffde4,
+    #005aa7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  border-radius: 30px;
+}
+
+h2 {
+  background-color: white;
+  border-radius: 60px;
+  width: 50%;
+  transform: translateX(50%);
+  position: relative;
+}
+
+/* Comparing Framer Motion to CSS Animations:
+ *
+ * Framer Motion allows dynamic animations based on state
+ * CSS animations work great for simple effects, like hover,
+ * especially if nothing is being resized based on state.
+ *
+ * For example, the following CSS animation will work
+ * beautifully at regular size, but not in fullscreen mode.
+*/
+a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 2s;
+  border-radius: 30px;
+  transition: 3s;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  opacity: 1;
+  background-color: #f4511e;
+  padding: 5px 0 5px 0;
+}
