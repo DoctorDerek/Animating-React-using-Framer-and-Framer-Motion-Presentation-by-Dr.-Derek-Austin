@@ -4,7 +4,7 @@
 
 📱 CodeSandbox Mobile Demo: https://sq7fy.csb.app/
 
-📺 Watch the Presentation (45min) - ReactJS Meetup 09/2019
+📺 Watch the Presentation (45min) - [ReactJS(RVA) Meetup](https://www.meetup.com/ReactJS-RVA/events/264563628/) 09/2019
 
 ▶▶▶ Video Part 1️⃣: https://photos.app.goo.gl/R4amndcwMBtspDJ49
 
